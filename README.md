@@ -24,7 +24,7 @@ Sure, here's a step-by-step explanation of the code along with the packages used
 8. The next line of code prompts the user to enter a message to encode and stores it in the variable message.
 
 <p align="center">
-  <img src="asset/bern-vazi/message.png" alt="Message" />
+  <img src="QR-code-generator/asset/bern-vazi/message.png" alt="Message" />
 </p>
 
 9. The next line of code removes duplicate characters from the message by converting it to a set, sorting it, and then joining it back together as a string. This is done to ensure that the message is unique and has a consistent order.
@@ -36,7 +36,7 @@ Sure, here's a step-by-step explanation of the code along with the packages used
 12. The next line of code applies a Hadamard gate `H gate` to all the qubits in the quantum circuit `qc`. This creates a *superposition* of all possible states for the qubits.
 
 <p align="center">
-  <img src="asset/bern-vazi/circuit.png" alt="circuit" />
+  <img src="QR-code-generator/asset/bern-vazi/circuit.png" alt="circuit" />
 </p>
 
 13. The next block of code defines the oracle as a secret binary string, which is used to mark the state that we want to find. In this case, the secret binary string is the complement of the binary message, where each 0 is replaced with **1** and each 1 is replaced with **0**.
@@ -44,13 +44,13 @@ Sure, here's a step-by-step explanation of the code along with the packages used
 14. The next block of code applies a `Z gate` to each qubit in the quantum circuit `qc` that corresponds to a **1** in the oracle. This flips the phase of the state `|x>` for each marked element, where `|x>` is the binary representation of the element.
 
 <p align="center">
-  <img src="asset/bern-vazi/simulator.png" alt="simulator" />
+  <img src="QR-code-generator/asset/bern-vazi/simulator.png" alt="simulator" />
 </p>
 
 15. The final step is to apply the Hadamard gate to each qubit in the quantum circuit. This puts the qubits in a **superposition** of all possible states, which will allow us to measure all possible outcomes with equal probability.
 
 <p align="center">
-  <img src="asset/bern-vazi/result.png" alt="result" />
+  <img src="QR-code-generator/asset/bern-vazi/result.png" alt="result" />
 </p>
 
 16. We add a measurement gate to each qubit in the quantum circuit. This collapses the superposition of states into a single classical bit.
@@ -58,7 +58,7 @@ Sure, here's a step-by-step explanation of the code along with the packages used
 17. Finally, we run the quantum circuit on a quantum simulator using the `Aer` package from Qiskit.
 
 <p align="center">
-  <img src="asset/bern-vazi/graph.png" alt="graph" />
+  <img src="QR-code-generator/asset/bern-vazi/graph.png" alt="graph" />
 </p>
 
 The Aer package provides a range of simulators for running quantum circuits. In this case, we use the `qasm_simulator` backend, which simulates the behavior of a real quantum computer and returns the outcomes of the measurements in the form of a dictionary containing the counts of each possible result.
@@ -70,13 +70,13 @@ The result variable contains the result of the simulation, which includes the co
 The generated QR-code :
 
 <p align="center">
-  <img src="asset/bern-vazi/qr_code.png" alt="qr_code" />
+  <img src="QR-code-generator/asset/bern-vazi/qr_code.png" alt="qr_code" />
 </p>
 
 Verified the obtained *QR-code* with the Google_lens:
 
 <p align="center">
-  <img src="asset/validation/Google_lens_2.jpg" alt="Google_lens_1" height="440" />
+  <img src="QR-code-generator/asset/validation/Google_lens_2.jpg" alt="Google_lens_1" height="440" />
 </p>
 
 # License
