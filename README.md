@@ -1,10 +1,25 @@
-## Abstract
-Nowadays we all use **QR code** for multiple purposes like making payments, sharing WiFi, etc. Have you ever wished to generate such QR code on your own ?, this project is for generating a QR code using `Qiskit` Sdk and `Python` programming language. 
+# Quantum QR Code Generator
+### 8th Semester Quantum Computing Project
+### Computer Science & Engineering, IGDTUW
 
-More detailed explaination can be found [here:](https://shisheerkaushik.netlify.app/project/quantum-qr-code-generator/).
+## Project Overview
+In today's digital era, QR codes are used extensively for making payments, sharing WiFi credentials, accessing URLs, and more. Have you ever thought of generating such QR codes using quantum computing?
 
-## Project Contribution
-This project work was submitted to the [QC-Hack 2021](https://www.quantumcoalition.io/qc-hack-2021) organized by [QuantumCoalition](https://www.quantumcoalition.io/). During the hackathon, I had the opportunity to learn and implement ideas in the field of Quantum Algorithms. It was a pleasure to be part of this hackathon. Thanks to [IBM Quantum](https://www.ibm.com/quantum) & [Google Quantum AI](https://quantumai.google/), I received credits to execute our code on real quantum hardware.
+This project demonstrates how to generate a QR code by leveraging Qiskit SDK and Python, combining classical and quantum approaches. The QR code reflects the result of a quantum algorithm based on a user-defined message.
+
+## Academic Context
+This project was developed as part of the Quantum Computing curriculum during the 8th semester at Indira Gandhi Delhi Technical University for Women (IGDTUW), under the Computer Science & Engineering department. It reflects my learning in quantum algorithms, Qiskit, and the fusion of quantum-classical programming.
+
+## Key Learnings
+- Introduction to Quantum Circuits
+
+- Encoding classical information in quantum states
+
+- Applying Grover's algorithm concepts
+
+- Visualizing quantum outcomes using histograms
+
+- Generating classical artifacts (QR Codes) from quantum-processed data
 
 ## General Implementation 
 Sure, here's a step-by-step explanation of the code along with the packages used and their purpose:
@@ -79,12 +94,9 @@ Verified the obtained *QR-code* with the Google_lens:
   <img src="QR-code-generator/asset/validation/Google_lens_2.jpg" alt="Google_lens_1" height="440" />
 </p>
 
-# License
-
-This work is licensed under a [MIT License](LICENSE) license.
 
 <hr>
 
-Created and maintained by [@Shisheer S Kaushik][1].
+Created and maintained by [@Sneha Chauhan][1].
 
-[1]: https://github.com/ShisheerKauhik24
+[1]: https://github.com/i-am-SnehaChauhan
